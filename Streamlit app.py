@@ -28,7 +28,7 @@ This application predicts PFAS concentration change over time at a chosen depth 
 t_max_days = 40  # total simulation time in days
 n_points = 200   # number of time points for plotting
 
-depth = st.slider("Select depth z (normalized 0–1)", 0.0, 1.0, 0.4, 0.01)
+depth = st.slider("Select depth z (m)", 0.0, 1.0, 0.4, 0.01)
 
 # --------------------------------------
 # Generate input for prediction
@@ -65,4 +65,5 @@ st.pyplot(fig)
 # Display last concentration value
 
 st.write(f"Predicted concentration at final time ({t_max_days} days): {c_pred[-1]:.4f} ppm")
+
 
