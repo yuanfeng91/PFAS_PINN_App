@@ -19,7 +19,7 @@ infer = load_model()
 # --------------------------------------
 st.title("PFAS Concentration Predictor")
 st.markdown("""
-This application predicts PFAS concentration change over time at a chosen depth `z` using a trained PINN model.
+This application predicts PFAS concentration change over time at a chosen depth `z` using a trained PINNs model.
 """)
 
 # --------------------------------------
@@ -65,6 +65,7 @@ st.pyplot(fig)
 # Display last concentration value
 
 st.write(f"Predicted concentration at final time ({t_max_days} days): {c_pred[-1]:.4f} ppm")
+
 
 
 
