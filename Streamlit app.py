@@ -57,7 +57,7 @@ fig, ax = plt.subplots(figsize=(8,5))
 ax.plot(time_days, c_pred, 'b-', linewidth=2)
 ax.set_xlabel("Time (days)")
 ax.set_ylabel("Concentration (ppm)")
-ax.set_title(f"Concentration vs Time at z={depth}")
+ax.set_title(f"Concentration vs Time at z={depth} m")
 ax.set_ylim(0, 1)   # <-- fix Y axis from 0 to 1
 ax.grid(True)
 st.pyplot(fig)
@@ -65,3 +65,4 @@ st.pyplot(fig)
 # Display last concentration value
 
 st.write(f"Predicted concentration at final time ({t_max_days} days): {c_pred[-1]:.4f} ppm")
+
